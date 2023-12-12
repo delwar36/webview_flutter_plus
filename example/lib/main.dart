@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:webview_flutter_plus/webview_flutter_plus.dart';
+import 'package:webview_flutter_plus_latest/webview_flutter_plus.dart';
 
 void main() {
   runApp(const WebViewPlusExample());
@@ -20,8 +20,7 @@ class WebViewPlusExampleMainPage extends StatefulWidget {
   const WebViewPlusExampleMainPage({Key? key}) : super(key: key);
 
   @override
-  _WebViewPlusExampleMainPageState createState() =>
-      _WebViewPlusExampleMainPageState();
+  State createState() => _WebViewPlusExampleMainPageState();
 }
 
 class _WebViewPlusExampleMainPageState
@@ -49,7 +48,7 @@ class _WebViewPlusExampleMainPageState
               },
               onPageFinished: (url) {
                 _controller?.getHeight().then((double height) {
-                  debugPrint("Height: " + height.toString());
+                  debugPrint("Height: $height");
                   setState(() {
                     _height = height;
                   });

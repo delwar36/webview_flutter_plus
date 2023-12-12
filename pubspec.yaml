@@ -1,4 +1,4 @@
-name: webview_flutter_plus
+name: webview_flutter_plus_latest
 description: An extension of webview_flutter to load local HTML,CSS and Javascript from Assets or Strings and much more.
 
 version: 0.3.0+1
